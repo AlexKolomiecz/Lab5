@@ -16,6 +16,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
+@SuppressWarnings("all")
 
 public class MainFrame extends JFrame {
     private static final int WIDTH = 700;

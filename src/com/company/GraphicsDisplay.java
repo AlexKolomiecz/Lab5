@@ -17,6 +17,7 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import javax.swing.JPanel;
+@SuppressWarnings("all")
 
 public class GraphicsDisplay extends JPanel {
     private ArrayList<Double[]> graphicsData;
@@ -48,8 +49,8 @@ public class GraphicsDisplay extends JPanel {
         this.gridStroke = new BasicStroke(1.0F, 0, 0, 10.0F, new float[]{4.0F, 4.0F}, 0.0F);
         this.markerStroke = new BasicStroke(1.0F, 0, 0, 10.0F, (float[])null, 0.0F);
         this.selectionStroke = new BasicStroke(1.0F, 0, 0, 10.0F, new float[]{10.0F, 10.0F}, 0.0F);
-        this.axisFont = new Font("Serif", 1, 36);
-        this.labelsFont = new Font("Serif", 0, 10);
+        this.axisFont = new Font("Serif", 1, 36);//шрифт для надписей осей
+        this.labelsFont = new Font("Serif", 0, 10);//шрифт для нподписей точек
         formatter.setMaximumFractionDigits(5);
         this.addMouseListener(new GraphicsDisplay.MouseHandler());
         this.addMouseMotionListener(new GraphicsDisplay.MouseMotionHandler());
