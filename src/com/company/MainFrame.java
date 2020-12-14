@@ -36,7 +36,7 @@ public class MainFrame extends JFrame {
         this.setJMenuBar(menuBar);
         JMenu fileMenu = new JMenu("Файл");
         menuBar.add(fileMenu);
-        Action openGraphicsAction = new AbstractAction("Открыть файл с графиком") {
+        Action openGraphicsAction = new AbstractAction("Открыть файл с графиком(bin файлы с прошлой лр)") {
             public void actionPerformed(ActionEvent event) {
                 if (MainFrame.this.fileChooser == null) {
                     MainFrame.this.fileChooser = new JFileChooser();
