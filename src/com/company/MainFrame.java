@@ -76,7 +76,7 @@ public class MainFrame extends JFrame {
             }
 
         } catch (FileNotFoundException var6) {
-            JOptionPane.showMessageDialog(this, "Указанный файл не найден", "Ошибка загрузки данных", 2);
+            JOptionPane.showMessageDialog(this, "Невозможно найти указанный файл", "Ошибка загрузки данных", 2);
         } catch (IOException var7) {
             JOptionPane.showMessageDialog(this, "Ошибка чтения координат точек из файла", "Ошибка загрузки данных", 2);
         }
